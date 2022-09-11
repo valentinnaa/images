@@ -1,0 +1,7 @@
+const express = require('express')
+const app = express()
+app.use(express.static('images'))
+app.use('/images', express.static('images'))
+app.listen(3000, function(req,res)
+{ console.log('running')
+})
